@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body bgcolor="#b3ffb3">
+
+  <div class="loader"></div>
+  <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Wild<span class="logo-dec">Life</span></a>
+              </div>
+              <div class="search" style="margin-left:50%;margin-top:-10px;">
+                <input class="box" type="text" name="" placeholder="Search here">
+                <input type="image" name="submit" src="img/searchlogo.png" class="btnn">
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="#portfolio">Contact</a></li>
+                <li class=""><a href="#service">Package</a></li>
+                <li class=""><a href="#feature">Gallery</a></li>
+                <li class="active"><a href="indexx.html">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="banner-info text-center wow fadeIn delay-05s">
+                <center>
+                <img src="img/Safari_logo.png" alt="company logo" title="logo" width="600px" height="600px" style="margin-top:-200px;">
+                <h2 class="bnr-sub-title" style="margin-top:-200px; font-family:Chilanka;">Online Management System</h2>
+                <p class="bnr-para"><h3 style="margin-top:-30px; font-family:Purisa;" >Life towards wild-life</h3> Get deep inside the wildlife starting from here.<br>Totaly resenoalbe for you<br>Dont worry we are certified.</p>
+                <div class="brn-btn">
+                  <a href="signup.html" class="btn btn-reg">Register Now!</a>
+                  <a href="#" class="btn btn-more">Learn More</a>
+                </div>
+              </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ HEADER-->
+
+    <!-- BODY -->
+    <table width="90%" height="100%" border="0" cellspacing="0" cellpadding="5px" style="margin-left:5%; margin-right:5%; margin-top:0px; box-shadow:-2px -9px 32px 20px #9edd2e inset; font-family:Purisa;" bgcolor="#ffffff">
+      <tr width="100%" height="20%">
+        <td rowspan="1" colspan="2" width="80%" bgcolor="#e6e6e6">
+          <table height="100%" width="100%" border="0" cellspacing="50px" style="margin-top:20px;">
+            <tr>
+              <td align="center">
+                <img src="img/p2.jpg"  width="90%" title="Picture of a family enjoying a trip" alt="Picture of a family enjoying a trip" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <p style="margin-top:30px;">
+                  Get the premium experience with our company, We providing you the best experience to intract with the nature like never before. Best you can get for price you paying
+                </p>
+              </td>
+              <td align="center">
+                <img src="img/p1.jpg"  width="90%" title="Photo include a vehicle, photographer,  a guide " alt="Photo include a vehicle, photographer,  a guide " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <p style="margin-top:30px;">
+                  You can have extra features like Photographers, Guides and optional vehicles can also be tacken upon the user's need.
+                </p>
+              </td>
+              <td align="center">
+                <img src="img/p3.jpg"  width="90%" title="showing the packagers and the information that we provide" alt="showing the packagers and the information that we provide" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <p style="margin-top:30px;">
+                  User can have several package options that we provide through our company, There are various of selection filled with unique features. Everyone who enjoying our service will be able to get their hands on unique equipments like handouts and more
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="4" valign="top" width="20%" style="border-left: solid;font-family:Arial;" >
+          <form action="user.php" method="post">
+            <br>
+            <input type="text" name="username" required/><br>
+            Username<br>
+            <input type="password" name="password" required/><br>
+            Password<br>
+            <center>
+            <input type="submit" value="Sign up" name="sUp">&nbsp;&nbsp;&nbsp;
+            <button name="lIn">Log In</button>
+            </center>
+          </form>
+          <hr>
+          <div class="container col-sm-4 mt-5">
+          <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+              <div class="card">
+                  <h3 class="card-header" id="monthAndYear"></h3>
+                  <table class="table table-bordered" id="calendar">
+                  <table class="table table-bordered table-responsive-sm" id="calendar">
+                      <thead>
+                      <tr>
+                          <th>Sun</th>
+                          <th>Mon</th>
+                          <th>Tue</th>
+                          <th>Wed</th>
+                          <th>Thu</th>
+                          <th>Fri</th>
+                          <th>Sat</th>
+                      </tr>
+                      </thead>
+                      <tbody id="calendar-body">
+                      </tbody>
+                  </table>
+                  <div class="form-inline">
+                      <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
+                      <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+                  </div>
+                  <br/>
+                  <form class="form-inline">
+                      <label class="lead mr-2 ml-2" for="month">Jump To: </label>
+                      <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                          <option value=0>Jan</option>
+                          <option value=1>Feb</option>
+                          <option value=2>Mar</option>
+                          <option value=3>Apr</option>
+                          <option value=4>May</option>
+                          <option value=5>Jun</option>
+                          <option value=6>Jul</option>
+                          <option value=7>Aug</option>
+                          <option value=8>Sep</option>
+                          <option value=9>Oct</option>
+                          <option value=10>Nov</option>
+                          <option value=11>Dec</option>
+                      </select>
+                      <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+                      <option value=1990>1990</option>
+                      <option value=1991>1991</option>
+                      <option value=1992>1992</option>
+                      <option value=1993>1993</option>
+                      <option value=1994>1994</option>
+                      <option value=1995>1995</option>
+                      <option value=1996>1996</option>
+                      <option value=1997>1997</option>
+                      <option value=1998>1998</option>
+                      <option value=1999>1999</option>
+                      <option value=2000>2000</option>
+                      <option value=2001>2001</option>
+                      <option value=2002>2002</option>
+                      <option value=2003>2003</option>
+                      <option value=2004>2004</option>
+                      <option value=2005>2005</option>
+                      <option value=2006>2006</option>
+                      <option value=2007>2007</option>
+                      <option value=2008>2008</option>
+                      <option value=2009>2009</option>
+                      <option value=2010>2010</option>
+                      <option value=2011>2011</option>
+                      <option value=2012>2012</option>
+                      <option value=2013>2013</option>
+                      <option value=2014>2014</option>
+                      <option value=2015>2015</option>
+                      <option value=2016>2016</option>
+                      <option value=2017>2017</option>
+                      <option value=2018>2018</option>
+                      <option value=2019>2019</option>
+                      <option value=2020>2020</option>
+                      <option value=2021>2021</option>
+                      <option value=2022>2022</option>
+                      <option value=2023>2023</option>
+                      <option value=2024>2024</option>
+                      <option value=2025>2025</option>
+                      <option value=2026>2026</option>
+                      <option value=2027>2027</option>
+                      <option value=2028>2028</option>
+                      <option value=2029>2029</option>
+                      <option value=2030>2030</option>
+                  </select></form>
+              </div>
+          </div>
+        <hr>
+        <p class="adds">
+            adds<br><br><br><br><br><br>
+        </p>
+        <hr>
+        <div class="navtree">
+          navagation tree<br><br><br><br><br><br><br><br>
+        </div>
+        <hr>
+        <form>
+          <center>
+          <button style="background-color:#80b3ff; border-radius:20px; height:30px;width:100%;">chat with us</button>
+          <textarea rows="10" cols="30" ></textarea>
+          </center>
+        </td>
+      </tr>
+
+      <tr width="100%" height="50%">
+        <td rowspan="1" colspan="2">
+          <table height="100%" width="100%" border="0" cellspacing="0" >
+            <tr height="50%" width="100%">
+              <td colspan="4">
+                <h3>Safari Management System</h3>
+                <p>
+                  Get register to the system to get all those features that we mentioned above.
+                  You will get the ability to do all the payments through various methods including paypal and online payment facilities provided by the our system
+                  <br>---- List out the feawidth:40px;
+  height:40px;tures a user can get through the by becoming a premium member.
+                  guiding materials will be provided in all packagers. User can come up with there own locations and  request us with the details. ----
+                </p>
+              </td>
+            </tr>
+
+            <tr height="50%" width="100%">
+              <td height="100%" width="20%">
+                <img src="img/p2.jpg"  width="90%" title="Picture of a family enjoying a trip" alt="Picture of a family enjoying a trip" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              </td>
+              <td height="100%" width="30%">
+                <p>
+                  Vehicle selection - Within our packagers we have provided the vehicles out of the box but we also giving the oppotunity for the customer to chooce their own vehicles matching. There are  various vehicle selection you can perform based on the need. Also we giving oppotunity you to reserve the vehicle that you want even before the journey.
+                </p>
+              </td>
+              <td height="100%" width="20%">
+                <img src="img/p2.jpg"  width="90%" title="Picture of a family enjoying a trip" alt="Picture of a family enjoying a trip" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              </td>
+              <td height="100%" width="30%">
+                <p>
+                  Vehicle selection - Within our packagers we have provided the vehicles out of the box but we also giving the oppotunity for the customer to chooce their own vehicles matching. There are  various vehicle selection you can perform based on the need. Also we giving oppotunity you to reserve the vehicle that you want even before the journey.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr width="100%" height="30%" bgcolor="#e6e6e6" style="font-family:Arial;">
+        <td rowspan="2" valign="top"><p style="font:20px bold;">Send Us a Quick Feedback</p>
+        <p style="padding:0px; margin-left:20px; margin-right:20px; padding:20px;">
+          <form>
+            Name<br>
+            <input type="text" placeholder="First" name="feedfname" size="10" required/>&nbsp;&nbsp;
+            <input type="text" placeholder="Last" name="feedlastname" size="10" required/><br><br>
+            Email<br>
+            <input type="email" size="29" required/><br><br>
+            Type your request/massege here<br>
+            <textarea rows="5" cols="43"></textarea><br><br>
+            <input type="checkbox">
+            Sent me reply as a mail&nbsp;&nbsp;
+            <input type="submit" value="submit" onsubmit="feed()">
+          </form>
+        </p>
+        </td>
+        <td style="padding:0px;">
+          <table border="0" cellspacing="0px" cellpadding="5px" height="100px">
+            <tr>
+              <td rowspan="2" height="100%">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.300519725211!2d79.9752103!3d6.9115017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2slk!4v1566735197836!5m2!1sen!2slk" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </td>
+              <td valign="top"><p><b>Location</b><br>SLIIT Malabe Campus,<br> New Kandy Rd,<br> Malabe 10115</p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p><b> Hours Open</b><br>Monday - Friday 8AM–9PM<br>Saturday 8AM–9PM<br>SUnday 12:30AM–9PM</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+      <td bgcolor="#e6e6e6" style="font-family:Arial;" align="center">
+          <p align="left" style="font-size:15px;">External Services that are provided through system</p>
+          <p class="social-icons1">
+            <a class="imusic" href="#"><img src="img/imusic.png" style="width:100%;"></a>
+            <a class="itune" href="#"><img src="img/itune.png" style="width:100%;"></a>
+          </p>
+          <p align="left" style="font-size:15px;">Catch out reviews and program through our officail brocast channels</p>
+          <p class="social-icons1">
+            <a class="appl" href="#"><img src="img/applestore.png" style="width:100%; height:100%;"></a>
+            <a class="gog" href="#"><img src="img/googlestore.png" style="width:100%; height:100%;"></a>
+          </p>
+       </td>
+      </tr>
+    </table>
+    <!--/ BODY-->
+
+
+    <!--FOOTER -->
+    <footer class="site-footer">
+          <div class="fbody" style="margin-left:5%; margin-right:5%">
+            <div class="ftop">
+              <table border="0" height="100%" width="100%" align="center">
+                  <tr width="80%">
+                    <td width="20%" valign="top" align="center"><h3>
+                      <h6>Categories</h6>
+                                  <ul class="footer-links" style="margin-top:-20px;">
+                                    <li>...</li>
+                                    <li>...</li>
+                                    <li>...</li>
+                                    <li>...</li>
+                                  </ul>
+                    </h3>
+                    </td>
+
+                    <td width="40%" valign="top" align="center">
+                    <h6>About</h6>
+
+                          This project is executed by  <br>&lt;~~MLB_05.1.2 STUDENTS~~&gt;
+
+
+
+                  </td>
+
+                    <td width="20%" valign="top" align="center">
+                      <h6>Quick Links</h6>
+            <ul class="footer-links" style="margin-top:-20px;">
+            <li class="active"><a href="indexx.html">Home</a></li>
+            <li class=""><a href="#feature">Gallery</a></li>
+            <li class=""><a href="#service">Package</a></li>
+              <li class=""><a href="#portfolio">Contact</a></li>
+            </ul>
+                    </td>
+                  </tr>
+              </table>
+            <div class="fbase">
+              <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12" style="margin-left:5px;">
+            <hr>
+            <p class="copyright-text" style=" margin-top:20px;">Copyright &copy; 2019 All Rights Reserved by
+         <a href="#">Wildlife pvt</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12" style="margin-top:-45px;">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><img src="img/fblogo.png" style="width:100%;"></a></li>
+              <li><a class="twitter" href="#"><img src="img/twlogo.png" style="width:100%;"></a></li>
+              <li><a class="dribbble" href="#"><img src="img/lnlogo.png" style="width:100%;"></a></li>
+              <li><a class="insta" href="#"><img src="img/ilogo.png" style="width:100%; height:100%;"></a></li>
+            </ul>
+          </div>
+        </div>
+            </div>
+          </div>
+
+    </footer>
+    <!---->
+  </div>
+
+  </body>
+  <script src="js/test.js" type="text/javascript">
+  </script>
+<script>
+  function feed(){
+    alert("Thank you for the feed back!");
+  }
+</script>
+</html>
